@@ -10,17 +10,20 @@
     <script>
         /* Rajpreet Kaur (c0743324) , Harmandeep kaur(c0745213)  */
       
-        var addition =
-        {
-            add: function() {
-                var sum = 0;
-                for (var i = 1109; i >= 119; i -= 11) {
-                    sum += i;
-                }
-                document.write(sum);
+       
+
+        function add(start, end, count) {
+            let sum = 0;
+            for (i = start; i >= end; i -= count) {
+                
+                sum += i;
             }
+            return sum;
         }
-        document.write(addition.add());
+
+        const sum = add(1109, 119, 11);
+
+        console.log( result);
         
         
         
